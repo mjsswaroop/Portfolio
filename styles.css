@@ -38,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body {
 }
 
 .logo img {
-    height: 75px;
+    height: 65px;
     width: auto;
     transition: .5s;
 }
@@ -83,10 +83,10 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--main-color);
     font-weight: 500;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
     transition: .5s;
 }
 
@@ -110,18 +110,18 @@ body {
 }
 
 section{
-   min-height: 100vh;
+    min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
 
 .home{
     display: flex;
     align-items: center;
-    background: rgb(255, 238, 206);
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color) 45%, var(--text-color) 45%, var(--text-color) 100%);
 }
 
 .home .homecont{
-  max-width: 44rem;
+    max-width: 44rem;
 }
 
 .homecont h3{
@@ -139,51 +139,59 @@ section{
     font-size: 1.6rem;
 }
 
+.homecont .web-developer-text {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
 .homecont .socialm a{
     margin-top: 1.4rem;
- display: inline-flex;
- justify-content: center;
- align-items: center;
- width: 4rem;
- height: 4rem;
- background: transparent;
- border: .2rem solid rgb(93, 42, 23);
- color: rgb(93, 42, 23);
- border-radius: 50%;
- box-shadow: 0 .2rem .5rem black;
- font-size: 2rem;
- margin: 5.5rem 1.5rem 3 rem 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--text-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 5.5rem 1.5rem 3rem 0;
 }
 
 .home .profcon{
     position: absolute;
-    top: 0%;
+    top: 50%;
     right: 0;
-    width: 820px;
-    height: 695px;
+    transform: translateY(-50%);
+    width: 768px;
+    height: 768px;
     overflow: hidden;
 }
 
 .home .profcon .profbox{
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
-    left: 200;
-    width: 820px;
-    height: 820px;
+    width: 768px;
+    height: 768px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(93, 42, 23);
 }
 
 .home .profbox .prof{
     position: absolute;
     display: flex;
-    left: 0;
     align-items: center;
-    background: rgb(255, 238, 206);
+    flex-direction: column;
+    color: var(--text-color);
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 384px;
+    background: var(--bg-color);
     padding: 13px 0;
 }
 
@@ -199,29 +207,29 @@ section{
 .home .profcon .profbox .circle{
     width: 460px;
     height: 460px;
-    border: 3px solid rgb(93, 42, 23);
+    background: transparent;
+    border: 3px solid var(--text-color);
     border-radius: 50%;
 }
 
 .home .profcon .overlay{
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
     width: 0;
     height: 0;
-    border-top: 384px solid rgb(93, 42, 23);
-    border-bottom: 384px solid rgb(93, 42, 23);
-    border-right: 384px solid rgb(93, 42, 23);
+    border-top: 384px solid transparent;
+    border-right: 384px solid transparent;
+    border-bottom: 384px solid transparent;
     border-left: 384px solid transparent;
 }
 
-.homeimg img{
- position: absolute;
- right: 0px;
- left: 960px;
- bottom: 0px;
- width: 600px;
- height: auto;
+.home .homeimg img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    pointer-events: none;
 }
 
 span{
@@ -610,16 +618,16 @@ span{
     }
 
     .header {
-        padding: 1.2rem;
+        padding: 0.8rem;
     }
 
     .logo img {
-        height: 65px;
+        height: 55px;
     }
 
     .navbar a {
-        font-size: 1.4rem;
-        margin-right: 2.5rem;
+        font-size: 1.3rem;
+        margin-right: 2rem;
     }
 
     .skills-container {
@@ -653,16 +661,16 @@ span{
     }
 
     .header {
-        padding: 1rem;
+        padding: 0.6rem;
     }
 
     .logo img {
-        height: 55px;
+        height: 45px;
     }
 
     .navbar a {
-        font-size: 1.3rem;
-        margin-right: 2rem;
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
     }
 
     .skills-container {
